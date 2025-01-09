@@ -1,14 +1,10 @@
 function calculateAverageStartingPrice() {}
 
-function addFreelancer(freelancers)
+function addFreelancer(freelancers) {}
 
 function renderFreelancers(freeLlancers) {}
 
-function render() {
-
-
-}
-
+function render() {}
 
 setInterval(() => {
   addFreelancer();

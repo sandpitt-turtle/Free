@@ -1,0 +1,16 @@
+{
+  "name": "freelance",
+  "version": "1.0.0",
+  "description": "",
+  "main": "free.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "init": "^0.1.2",
+    "typescript": "^5.7.3"
+  }
+}
