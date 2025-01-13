@@ -30,9 +30,7 @@ function addFreelancer() {
 }
 function displayAveragePrice() {
   const averagePrice = calculateAveragePrice(freelancers);
-
   const averagePriceElement = document.querySelector("#average-price");
-
   if (averagePriceElement) {
     averagePriceElement.innerHTML = `Average Price: $${averagePrice.toFixed(
       2
@@ -47,13 +45,25 @@ function renderFreelancer(freelancer) {
   }
 
   const freelancerElement = document.createElement("li");
-  freelancerElement.innerHTML = `<p>Name: ${freelancer.name}</p>
-                                   <p>Occupation: ${freelancer.occupation}</p>
-                                   <p>Price: $${freelancer.price}</p>`;
+
+  const nameElement = document.createElement("p");
+  nameElement.textContent = `Name: ${freelancer.name}`;
+
+  const occupationElement = document.createElement("p");
+  occupationElement.textContent = `Occupation: ${freelancer.occupation}`;
+
+  const priceElement = document.createElement("p");
+  priceElement.textContent = `Price: $${freelancer.price}`;
+
+  freelancerElement.appendChild(nameElement);
+  freelancerElement.appendChild(occupationElement);
+  freelancerElement.appendChild(priceElement);
 
   freelancerlist.appendChild(freelancerElement);
 }
 
+freelancers.forEach((freelancer) => renderFreelancer(freelancer));
+
 setInterval(() => {
   addFreelancer();
-}, 1000);
+}, 2500);
