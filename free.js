@@ -63,7 +63,9 @@ function renderFreelancer(freelancer) {
 }
 
 freelancers.forEach((freelancer) => renderFreelancer(freelancer));
+displayAveragePrice();
 
 setInterval(() => {
   addFreelancer();
 }, 2500);
+s;
