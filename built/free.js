@@ -50,6 +50,8 @@ function renderFreelancer(freelancer) {
     freelancerElement.appendChild(priceElement);
     freelancerlist.appendChild(freelancerElement);
 }
+freelancers.forEach((freelancer) => renderFreelancer(freelancer));
+displayAveragePrice();
 setInterval(() => {
     addFreelancer();
-}, 1000);
+}, 2500);
